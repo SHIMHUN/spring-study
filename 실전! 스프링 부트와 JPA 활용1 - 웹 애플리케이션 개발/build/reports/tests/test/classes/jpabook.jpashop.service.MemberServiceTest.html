@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - MemberServiceTest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>MemberServiceTest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/jpabook.jpashop.service.html">jpabook.jpashop.service</a> &gt; MemberServiceTest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.074s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="tab-container">
+<ul class="tabLinks">
+<li>
+<a href="#">Tests</a>
+</li>
+<li>
+<a href="#">Standard output</a>
+</li>
+</ul>
+<div class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">회원가입</td>
+<td class="success">1.074s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>06:10:03.390 [Test worker] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+?[32m :: Spring Boot :: ?[39m              ?[2m (v3.4.3)?[0;39m
+
+?[2m2025-03-22T06:10:03.870+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mj.jpashop.service.MemberServiceTest     ?[0;39m ?[2m:?[0;39m Starting MemberServiceTest using Java 17.0.8.1 with PID 39549 (started by shimhun99 in /Users/shimhun99/Desktop/Springboot/실전! 스프링 부트와 JPA 활용1 - 웹 애플리케이션 개발/jpashop)
+?[2m2025-03-22T06:10:03.872+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mj.jpashop.service.MemberServiceTest     ?[0;39m ?[2m:?[0;39m No active profile set, falling back to 1 default profile: &quot;default&quot;
+?[2m2025-03-22T06:10:05.091+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+?[2m2025-03-22T06:10:05.137+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36m.s.d.r.c.RepositoryConfigurationDelegate?[0;39m ?[2m:?[0;39m Finished Spring Data repository scanning in 31 ms. Found 0 JPA repository interfaces.
+?[2m2025-03-22T06:10:06.008+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mo.hibernate.jpa.internal.util.LogHelper ?[0;39m ?[2m:?[0;39m HHH000204: Processing PersistenceUnitInfo [name: default]
+?[2m2025-03-22T06:10:06.068+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.Version                   ?[0;39m ?[2m:?[0;39m HHH000412: Hibernate ORM core version 6.6.8.Final
+?[2m2025-03-22T06:10:06.110+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mo.h.c.internal.RegionFactoryInitiator   ?[0;39m ?[2m:?[0;39m HHH000026: Second-level cache disabled
+?[2m2025-03-22T06:10:06.405+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mo.s.o.j.p.SpringPersistenceUnitInfo     ?[0;39m ?[2m:?[0;39m No LoadTimeWeaver setup: ignoring JPA class transformer
+?[2m2025-03-22T06:10:06.438+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-1 - Starting...
+?[2m2025-03-22T06:10:06.514+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mcom.zaxxer.hikari.pool.HikariPool       ?[0;39m ?[2m:?[0;39m HikariPool-1 - Added connection conn0: url=jdbc:h2:tcp://localhost/~/jpashop user=SA
+?[2m2025-03-22T06:10:06.517+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mcom.zaxxer.hikari.HikariDataSource      ?[0;39m ?[2m:?[0;39m HikariPool-1 - Start completed.
+?[2m2025-03-22T06:10:06.594+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.orm.connections.pooling   ?[0;39m ?[2m:?[0;39m HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'p6SpyDataSourceDecorator [com.p6spy.engine.spy.P6DataSource] -&gt; dataSource [com.zaxxer.hikari.HikariDataSource]']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+?[2m2025-03-22T06:10:07.879+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create global temporary table HTE_order_item(count integer, order_price integer, rn_ integer not null, item_id bigint, order_id bigint, order_item_id bigint, primary key (rn_)) TRANSACTIONAL
+?[2m2025-03-22T06:10:07.886+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591407886 | took 2ms | statement | connection 1| url jdbc:h2:tcp://localhost/~/jpashop
+create global temporary table HTE_order_item(count integer, order_price integer, rn_ integer not null, item_id bigint, order_id bigint, order_item_id bigint, primary key (rn_)) TRANSACTIONAL
+create global temporary table HTE_order_item(count integer, order_price integer, rn_ integer not null, item_id bigint, order_id bigint, order_item_id bigint, primary key (rn_)) TRANSACTIONAL;
+?[2m2025-03-22T06:10:07.891+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create global temporary table HTE_item(price integer, rn_ integer not null, stock_quantity integer, item_id bigint, dtype varchar(31) not null, actor varchar(255), artist varchar(255), author varchar(255), director varchar(255), etc varchar(255), isbn varchar(255), name varchar(255), primary key (rn_)) TRANSACTIONAL
+?[2m2025-03-22T06:10:07.892+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591407892 | took 0ms | statement | connection 2| url jdbc:h2:tcp://localhost/~/jpashop
+create global temporary table HTE_item(price integer, rn_ integer not null, stock_quantity integer, item_id bigint, dtype varchar(31) not null, actor varchar(255), artist varchar(255), author varchar(255), director varchar(255), etc varchar(255), isbn varchar(255), name varchar(255), primary key (rn_)) TRANSACTIONAL
+create global temporary table HTE_item(price integer, rn_ integer not null, stock_quantity integer, item_id bigint, dtype varchar(31) not null, actor varchar(255), artist varchar(255), author varchar(255), director varchar(255), etc varchar(255), isbn varchar(255), name varchar(255), primary key (rn_)) TRANSACTIONAL;
+?[2m2025-03-22T06:10:07.894+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create global temporary table HTE_item1(price integer, rn_ integer not null, stock_quantity integer, item_id bigint, dtype varchar(31) not null, author varchar(255), isbn varchar(255), name varchar(255), primary key (rn_)) TRANSACTIONAL
+?[2m2025-03-22T06:10:07.895+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591407895 | took 0ms | statement | connection 3| url jdbc:h2:tcp://localhost/~/jpashop
+create global temporary table HTE_item1(price integer, rn_ integer not null, stock_quantity integer, item_id bigint, dtype varchar(31) not null, author varchar(255), isbn varchar(255), name varchar(255), primary key (rn_)) TRANSACTIONAL
+create global temporary table HTE_item1(price integer, rn_ integer not null, stock_quantity integer, item_id bigint, dtype varchar(31) not null, author varchar(255), isbn varchar(255), name varchar(255), primary key (rn_)) TRANSACTIONAL;
+?[2m2025-03-22T06:10:07.897+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create global temporary table HTE_category(rn_ integer not null, category_id bigint, parent_id bigint, name varchar(255), primary key (rn_)) TRANSACTIONAL
+?[2m2025-03-22T06:10:07.900+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591407900 | took 0ms | statement | connection 4| url jdbc:h2:tcp://localhost/~/jpashop
+create global temporary table HTE_category(rn_ integer not null, category_id bigint, parent_id bigint, name varchar(255), primary key (rn_)) TRANSACTIONAL
+create global temporary table HTE_category(rn_ integer not null, category_id bigint, parent_id bigint, name varchar(255), primary key (rn_)) TRANSACTIONAL;
+?[2m2025-03-22T06:10:07.902+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create global temporary table HTE_item2(price integer, rn_ integer not null, stock_quantity integer, item_id bigint, dtype varchar(31) not null, actor varchar(255), director varchar(255), name varchar(255), primary key (rn_)) TRANSACTIONAL
+?[2m2025-03-22T06:10:07.903+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591407903 | took 0ms | statement | connection 5| url jdbc:h2:tcp://localhost/~/jpashop
+create global temporary table HTE_item2(price integer, rn_ integer not null, stock_quantity integer, item_id bigint, dtype varchar(31) not null, actor varchar(255), director varchar(255), name varchar(255), primary key (rn_)) TRANSACTIONAL
+create global temporary table HTE_item2(price integer, rn_ integer not null, stock_quantity integer, item_id bigint, dtype varchar(31) not null, actor varchar(255), director varchar(255), name varchar(255), primary key (rn_)) TRANSACTIONAL;
+?[2m2025-03-22T06:10:07.906+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create global temporary table HTE_orders(rn_ integer not null, delivery_id bigint, member_id bigint, order_date timestamp(6), order_id bigint, status enum ('CANCLE', 'ORDER'), primary key (rn_)) TRANSACTIONAL
+?[2m2025-03-22T06:10:07.907+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591407907 | took 0ms | statement | connection 6| url jdbc:h2:tcp://localhost/~/jpashop
+create global temporary table HTE_orders(rn_ integer not null, delivery_id bigint, member_id bigint, order_date timestamp(6), order_id bigint, status enum ('CANCLE','ORDER'), primary key (rn_)) TRANSACTIONAL
+create global temporary table HTE_orders(rn_ integer not null, delivery_id bigint, member_id bigint, order_date timestamp(6), order_id bigint, status enum ('CANCLE','ORDER'), primary key (rn_)) TRANSACTIONAL;
+?[2m2025-03-22T06:10:07.908+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create global temporary table HTE_item0(price integer, rn_ integer not null, stock_quantity integer, item_id bigint, dtype varchar(31) not null, artist varchar(255), etc varchar(255), name varchar(255), primary key (rn_)) TRANSACTIONAL
+?[2m2025-03-22T06:10:07.908+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591407908 | took 0ms | statement | connection 7| url jdbc:h2:tcp://localhost/~/jpashop
+create global temporary table HTE_item0(price integer, rn_ integer not null, stock_quantity integer, item_id bigint, dtype varchar(31) not null, artist varchar(255), etc varchar(255), name varchar(255), primary key (rn_)) TRANSACTIONAL
+create global temporary table HTE_item0(price integer, rn_ integer not null, stock_quantity integer, item_id bigint, dtype varchar(31) not null, artist varchar(255), etc varchar(255), name varchar(255), primary key (rn_)) TRANSACTIONAL;
+?[2m2025-03-22T06:10:07.911+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create global temporary table HTE_delivery(rn_ integer not null, delivery_id bigint, city varchar(255), street varchar(255), zipcode varchar(255), status enum ('COMP', 'READY'), primary key (rn_)) TRANSACTIONAL
+?[2m2025-03-22T06:10:07.912+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591407912 | took 0ms | statement | connection 8| url jdbc:h2:tcp://localhost/~/jpashop
+create global temporary table HTE_delivery(rn_ integer not null, delivery_id bigint, city varchar(255), street varchar(255), zipcode varchar(255), status enum ('COMP','READY'), primary key (rn_)) TRANSACTIONAL
+create global temporary table HTE_delivery(rn_ integer not null, delivery_id bigint, city varchar(255), street varchar(255), zipcode varchar(255), status enum ('COMP','READY'), primary key (rn_)) TRANSACTIONAL;
+?[2m2025-03-22T06:10:07.912+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create global temporary table HTE_member(rn_ integer not null, member_id bigint, city varchar(255), name varchar(255), street varchar(255), zipcode varchar(255), primary key (rn_)) TRANSACTIONAL
+?[2m2025-03-22T06:10:07.913+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591407913 | took 0ms | statement | connection 9| url jdbc:h2:tcp://localhost/~/jpashop
+create global temporary table HTE_member(rn_ integer not null, member_id bigint, city varchar(255), name varchar(255), street varchar(255), zipcode varchar(255), primary key (rn_)) TRANSACTIONAL
+create global temporary table HTE_member(rn_ integer not null, member_id bigint, city varchar(255), name varchar(255), street varchar(255), zipcode varchar(255), primary key (rn_)) TRANSACTIONAL;
+?[2m2025-03-22T06:10:08.125+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mo.h.e.t.j.p.i.JtaPlatformInitiator      ?[0;39m ?[2m:?[0;39m HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+?[2m2025-03-22T06:10:08.143+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    drop table if exists category cascade 
+?[2m2025-03-22T06:10:08.145+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408145 | took 1ms | statement | connection 10| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop table if exists category cascade 
+
+    drop table if exists category cascade ;
+?[2m2025-03-22T06:10:08.148+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    drop table if exists category_item cascade 
+?[2m2025-03-22T06:10:08.149+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408149 | took 0ms | statement | connection 10| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop table if exists category_item cascade 
+
+    drop table if exists category_item cascade ;
+?[2m2025-03-22T06:10:08.149+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    drop table if exists delivery cascade 
+?[2m2025-03-22T06:10:08.150+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408150 | took 0ms | statement | connection 10| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop table if exists delivery cascade 
+
+    drop table if exists delivery cascade ;
+?[2m2025-03-22T06:10:08.150+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    drop table if exists item cascade 
+?[2m2025-03-22T06:10:08.152+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408152 | took 1ms | statement | connection 10| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop table if exists item cascade 
+
+    drop table if exists item cascade ;
+?[2m2025-03-22T06:10:08.152+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    drop table if exists member cascade 
+?[2m2025-03-22T06:10:08.153+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408153 | took 0ms | statement | connection 10| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop table if exists member cascade 
+
+    drop table if exists member cascade ;
+?[2m2025-03-22T06:10:08.153+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    drop table if exists order_item cascade 
+?[2m2025-03-22T06:10:08.154+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408154 | took 0ms | statement | connection 10| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop table if exists order_item cascade 
+
+    drop table if exists order_item cascade ;
+?[2m2025-03-22T06:10:08.154+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    drop table if exists orders cascade 
+?[2m2025-03-22T06:10:08.155+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408155 | took 0ms | statement | connection 10| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop table if exists orders cascade 
+
+    drop table if exists orders cascade ;
+?[2m2025-03-22T06:10:08.156+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    drop sequence if exists category_seq
+?[2m2025-03-22T06:10:08.157+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408157 | took 0ms | statement | connection 10| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop sequence if exists category_seq
+
+    drop sequence if exists category_seq;
+?[2m2025-03-22T06:10:08.157+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    drop sequence if exists delivery_seq
+?[2m2025-03-22T06:10:08.157+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408157 | took 0ms | statement | connection 10| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop sequence if exists delivery_seq
+
+    drop sequence if exists delivery_seq;
+?[2m2025-03-22T06:10:08.157+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    drop sequence if exists item_seq
+?[2m2025-03-22T06:10:08.158+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408158 | took 0ms | statement | connection 10| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop sequence if exists item_seq
+
+    drop sequence if exists item_seq;
+?[2m2025-03-22T06:10:08.158+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    drop sequence if exists member_seq
+?[2m2025-03-22T06:10:08.159+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408159 | took 0ms | statement | connection 10| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop sequence if exists member_seq
+
+    drop sequence if exists member_seq;
+?[2m2025-03-22T06:10:08.161+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    drop sequence if exists order_item_seq
+?[2m2025-03-22T06:10:08.161+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408161 | took 0ms | statement | connection 10| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop sequence if exists order_item_seq
+
+    drop sequence if exists order_item_seq;
+?[2m2025-03-22T06:10:08.162+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    drop sequence if exists orders_seq
+?[2m2025-03-22T06:10:08.162+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408162 | took 0ms | statement | connection 10| url jdbc:h2:tcp://localhost/~/jpashop
+
+    drop sequence if exists orders_seq
+
+    drop sequence if exists orders_seq;
+?[2m2025-03-22T06:10:08.171+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create sequence category_seq start with 1 increment by 50
+?[2m2025-03-22T06:10:08.172+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408172 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create sequence category_seq start with 1 increment by 50
+
+    create sequence category_seq start with 1 increment by 50;
+?[2m2025-03-22T06:10:08.172+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create sequence delivery_seq start with 1 increment by 50
+?[2m2025-03-22T06:10:08.173+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408173 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create sequence delivery_seq start with 1 increment by 50
+
+    create sequence delivery_seq start with 1 increment by 50;
+?[2m2025-03-22T06:10:08.173+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create sequence item_seq start with 1 increment by 50
+?[2m2025-03-22T06:10:08.173+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408173 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create sequence item_seq start with 1 increment by 50
+
+    create sequence item_seq start with 1 increment by 50;
+?[2m2025-03-22T06:10:08.173+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create sequence member_seq start with 1 increment by 50
+?[2m2025-03-22T06:10:08.175+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408175 | took 1ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create sequence member_seq start with 1 increment by 50
+
+    create sequence member_seq start with 1 increment by 50;
+?[2m2025-03-22T06:10:08.176+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create sequence order_item_seq start with 1 increment by 50
+?[2m2025-03-22T06:10:08.178+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408178 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create sequence order_item_seq start with 1 increment by 50
+
+    create sequence order_item_seq start with 1 increment by 50;
+?[2m2025-03-22T06:10:08.178+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create sequence orders_seq start with 1 increment by 50
+?[2m2025-03-22T06:10:08.179+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408179 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create sequence orders_seq start with 1 increment by 50
+
+    create sequence orders_seq start with 1 increment by 50;
+?[2m2025-03-22T06:10:08.183+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create table category (
+        category_id bigint not null,
+        parent_id bigint,
+        name varchar(255),
+        primary key (category_id)
+    )
+?[2m2025-03-22T06:10:08.184+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408184 | took 1ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create table category (
+        category_id bigint not null,
+        parent_id bigint,
+        name varchar(255),
+        primary key (category_id)
+    )
+
+    create table category (
+        category_id bigint not null,
+        parent_id bigint,
+        name varchar(255),
+        primary key (category_id)
+    );
+?[2m2025-03-22T06:10:08.185+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create table category_item (
+        category_id bigint not null,
+        item_id bigint not null
+    )
+?[2m2025-03-22T06:10:08.186+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408186 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create table category_item (
+        category_id bigint not null,
+        item_id bigint not null
+    )
+
+    create table category_item (
+        category_id bigint not null,
+        item_id bigint not null
+    );
+?[2m2025-03-22T06:10:08.186+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create table delivery (
+        delivery_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        status enum ('COMP','READY'),
+        primary key (delivery_id)
+    )
+?[2m2025-03-22T06:10:08.187+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408187 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create table delivery (
+        delivery_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        status enum ('COMP','READY'),
+        primary key (delivery_id)
+    )
+
+    create table delivery (
+        delivery_id bigint not null,
+        city varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        status enum ('COMP','READY'),
+        primary key (delivery_id)
+    );
+?[2m2025-03-22T06:10:08.188+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create table item (
+        price integer not null,
+        stock_quantity integer not null,
+        item_id bigint not null,
+        dtype varchar(31) not null,
+        actor varchar(255),
+        artist varchar(255),
+        author varchar(255),
+        director varchar(255),
+        etc varchar(255),
+        isbn varchar(255),
+        name varchar(255),
+        primary key (item_id)
+    )
+?[2m2025-03-22T06:10:08.190+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408190 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create table item (
+        price integer not null,
+        stock_quantity integer not null,
+        item_id bigint not null,
+        dtype varchar(31) not null,
+        actor varchar(255),
+        artist varchar(255),
+        author varchar(255),
+        director varchar(255),
+        etc varchar(255),
+        isbn varchar(255),
+        name varchar(255),
+        primary key (item_id)
+    )
+
+    create table item (
+        price integer not null,
+        stock_quantity integer not null,
+        item_id bigint not null,
+        dtype varchar(31) not null,
+        actor varchar(255),
+        artist varchar(255),
+        author varchar(255),
+        director varchar(255),
+        etc varchar(255),
+        isbn varchar(255),
+        name varchar(255),
+        primary key (item_id)
+    );
+?[2m2025-03-22T06:10:08.190+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create table member (
+        member_id bigint not null,
+        city varchar(255),
+        name varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        primary key (member_id)
+    )
+?[2m2025-03-22T06:10:08.193+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408192 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create table member (
+        member_id bigint not null,
+        city varchar(255),
+        name varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        primary key (member_id)
+    )
+
+    create table member (
+        member_id bigint not null,
+        city varchar(255),
+        name varchar(255),
+        street varchar(255),
+        zipcode varchar(255),
+        primary key (member_id)
+    );
+?[2m2025-03-22T06:10:08.193+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create table order_item (
+        count integer not null,
+        order_price integer not null,
+        item_id bigint,
+        order_id bigint,
+        order_item_id bigint not null,
+        primary key (order_item_id)
+    )
+?[2m2025-03-22T06:10:08.194+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408194 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create table order_item (
+        count integer not null,
+        order_price integer not null,
+        item_id bigint,
+        order_id bigint,
+        order_item_id bigint not null,
+        primary key (order_item_id)
+    )
+
+    create table order_item (
+        count integer not null,
+        order_price integer not null,
+        item_id bigint,
+        order_id bigint,
+        order_item_id bigint not null,
+        primary key (order_item_id)
+    );
+?[2m2025-03-22T06:10:08.195+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    create table orders (
+        delivery_id bigint unique,
+        member_id bigint,
+        order_date timestamp(6),
+        order_id bigint not null,
+        status enum ('CANCLE','ORDER'),
+        primary key (order_id)
+    )
+?[2m2025-03-22T06:10:08.197+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408197 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    create table orders (
+        delivery_id bigint unique,
+        member_id bigint,
+        order_date timestamp(6),
+        order_id bigint not null,
+        status enum ('CANCLE','ORDER'),
+        primary key (order_id)
+    )
+
+    create table orders (
+        delivery_id bigint unique,
+        member_id bigint,
+        order_date timestamp(6),
+        order_id bigint not null,
+        status enum ('CANCLE','ORDER'),
+        primary key (order_id)
+    );
+?[2m2025-03-22T06:10:08.198+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    alter table if exists category 
+       add constraint FK2y94svpmqttx80mshyny85wqr 
+       foreign key (parent_id) 
+       references category
+?[2m2025-03-22T06:10:08.200+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408200 | took 1ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    alter table if exists category 
+       add constraint FK2y94svpmqttx80mshyny85wqr 
+       foreign key (parent_id) 
+       references category
+
+    alter table if exists category 
+       add constraint FK2y94svpmqttx80mshyny85wqr 
+       foreign key (parent_id) 
+       references category;
+?[2m2025-03-22T06:10:08.201+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    alter table if exists category_item 
+       add constraint FKu8b4lwqutcdq3363gf6mlujq 
+       foreign key (item_id) 
+       references item
+?[2m2025-03-22T06:10:08.202+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408202 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    alter table if exists category_item 
+       add constraint FKu8b4lwqutcdq3363gf6mlujq 
+       foreign key (item_id) 
+       references item
+
+    alter table if exists category_item 
+       add constraint FKu8b4lwqutcdq3363gf6mlujq 
+       foreign key (item_id) 
+       references item;
+?[2m2025-03-22T06:10:08.204+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    alter table if exists category_item 
+       add constraint FKcq2n0opf5shyh84ex1fhukcbh 
+       foreign key (category_id) 
+       references category
+?[2m2025-03-22T06:10:08.205+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408205 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    alter table if exists category_item 
+       add constraint FKcq2n0opf5shyh84ex1fhukcbh 
+       foreign key (category_id) 
+       references category
+
+    alter table if exists category_item 
+       add constraint FKcq2n0opf5shyh84ex1fhukcbh 
+       foreign key (category_id) 
+       references category;
+?[2m2025-03-22T06:10:08.205+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    alter table if exists order_item 
+       add constraint FKija6hjjiit8dprnmvtvgdp6ru 
+       foreign key (item_id) 
+       references item
+?[2m2025-03-22T06:10:08.206+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408206 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    alter table if exists order_item 
+       add constraint FKija6hjjiit8dprnmvtvgdp6ru 
+       foreign key (item_id) 
+       references item
+
+    alter table if exists order_item 
+       add constraint FKija6hjjiit8dprnmvtvgdp6ru 
+       foreign key (item_id) 
+       references item;
+?[2m2025-03-22T06:10:08.206+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    alter table if exists order_item 
+       add constraint FKt4dc2r9nbvbujrljv3e23iibt 
+       foreign key (order_id) 
+       references orders
+?[2m2025-03-22T06:10:08.208+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408208 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    alter table if exists order_item 
+       add constraint FKt4dc2r9nbvbujrljv3e23iibt 
+       foreign key (order_id) 
+       references orders
+
+    alter table if exists order_item 
+       add constraint FKt4dc2r9nbvbujrljv3e23iibt 
+       foreign key (order_id) 
+       references orders;
+?[2m2025-03-22T06:10:08.208+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    alter table if exists orders 
+       add constraint FKtkrur7wg4d8ax0pwgo0vmy20c 
+       foreign key (delivery_id) 
+       references delivery
+?[2m2025-03-22T06:10:08.209+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408209 | took 0ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    alter table if exists orders 
+       add constraint FKtkrur7wg4d8ax0pwgo0vmy20c 
+       foreign key (delivery_id) 
+       references delivery
+
+    alter table if exists orders 
+       add constraint FKtkrur7wg4d8ax0pwgo0vmy20c 
+       foreign key (delivery_id) 
+       references delivery;
+?[2m2025-03-22T06:10:08.209+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    alter table if exists orders 
+       add constraint FKpktxwhj3x9m4gth5ff6bkqgeb 
+       foreign key (member_id) 
+       references member
+?[2m2025-03-22T06:10:08.211+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591408211 | took 1ms | statement | connection 11| url jdbc:h2:tcp://localhost/~/jpashop
+
+    alter table if exists orders 
+       add constraint FKpktxwhj3x9m4gth5ff6bkqgeb 
+       foreign key (member_id) 
+       references member
+
+    alter table if exists orders 
+       add constraint FKpktxwhj3x9m4gth5ff6bkqgeb 
+       foreign key (member_id) 
+       references member;
+?[2m2025-03-22T06:10:08.220+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mj.LocalContainerEntityManagerFactoryBean?[0;39m ?[2m:?[0;39m Initialized JPA EntityManagerFactory for persistence unit 'default'
+?[2m2025-03-22T06:10:08.652+09:00?[0;39m ?[33m WARN?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mJpaBaseConfiguration$JpaWebConfiguration?[0;39m ?[2m:?[0;39m spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+?[2m2025-03-22T06:10:08.690+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mo.s.b.a.w.s.WelcomePageHandlerMapping   ?[0;39m ?[2m:?[0;39m Adding welcome page: class path resource [static/index.html]
+?[2m2025-03-22T06:10:09.322+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mj.jpashop.service.MemberServiceTest     ?[0;39m ?[2m:?[0;39m Started MemberServiceTest in 5.939 seconds (process running for 7.436)
+?[2m2025-03-22T06:10:10.337+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    select
+        m1_0.member_id,
+        m1_0.city,
+        m1_0.street,
+        m1_0.zipcode,
+        m1_0.name 
+    from
+        member m1_0 
+    where
+        m1_0.name=?
+?[2m2025-03-22T06:10:10.344+09:00?[0;39m ?[32mTRACE?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.orm.jdbc.bind             ?[0;39m ?[2m:?[0;39m binding parameter (1:VARCHAR) &lt;- [kim]
+?[2m2025-03-22T06:10:10.349+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591410349 | took 4ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+select m1_0.member_id,m1_0.city,m1_0.street,m1_0.zipcode,m1_0.name from member m1_0 where m1_0.name=?
+select m1_0.member_id,m1_0.city,m1_0.street,m1_0.zipcode,m1_0.name from member m1_0 where m1_0.name='kim';
+?[2m2025-03-22T06:10:10.370+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    select
+        next value for member_seq
+?[2m2025-03-22T06:10:10.371+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591410371 | took 0ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+select next value for member_seq
+select next value for member_seq;
+?[2m2025-03-22T06:10:10.397+09:00?[0;39m ?[32mDEBUG?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.SQL                       ?[0;39m ?[2m:?[0;39m 
+    insert 
+    into
+        member
+        (city, street, zipcode, name, member_id) 
+    values
+        (?, ?, ?, ?, ?)
+?[2m2025-03-22T06:10:10.398+09:00?[0;39m ?[32mTRACE?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.orm.jdbc.bind             ?[0;39m ?[2m:?[0;39m binding parameter (1:VARCHAR) &lt;- [null]
+?[2m2025-03-22T06:10:10.399+09:00?[0;39m ?[32mTRACE?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.orm.jdbc.bind             ?[0;39m ?[2m:?[0;39m binding parameter (2:VARCHAR) &lt;- [null]
+?[2m2025-03-22T06:10:10.399+09:00?[0;39m ?[32mTRACE?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.orm.jdbc.bind             ?[0;39m ?[2m:?[0;39m binding parameter (3:VARCHAR) &lt;- [null]
+?[2m2025-03-22T06:10:10.399+09:00?[0;39m ?[32mTRACE?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.orm.jdbc.bind             ?[0;39m ?[2m:?[0;39m binding parameter (4:VARCHAR) &lt;- [kim]
+?[2m2025-03-22T06:10:10.399+09:00?[0;39m ?[32mTRACE?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36morg.hibernate.orm.jdbc.bind             ?[0;39m ?[2m:?[0;39m binding parameter (5:BIGINT) &lt;- [1]
+?[2m2025-03-22T06:10:10.400+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591410400 | took 0ms | statement | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+insert into member (city,street,zipcode,name,member_id) values (?,?,?,?,?)
+insert into member (city,street,zipcode,name,member_id) values (NULL,NULL,NULL,'kim',1);
+?[2m2025-03-22T06:10:10.429+09:00?[0;39m ?[32m INFO?[0;39m ?[35m39549?[0;39m ?[2m--- [    Test worker] ?[0;39m?[36mp6spy                                   ?[0;39m ?[2m:?[0;39m #1742591410429 | took 0ms | commit | connection 12| url jdbc:h2:tcp://localhost/~/jpashop
+
+;
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="https://www.gradle.org">Gradle 8.13</a> at 2025. 3. 22. 오전 6:10:10</p>
+</div>
+</div>
+</body>
+</html>
